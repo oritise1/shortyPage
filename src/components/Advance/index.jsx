@@ -5,7 +5,7 @@ import Fully from "../../assets/icon-fully.svg";
 
 const Advance = () => {
   return (
-    <div className="w-full bg-gray-200 px-6 lg:px-20 py-12">
+    <div className="w-full bg-gray-200 px-6 lg:px-20 py-12 overflow-hidden">
       <div className="text-center max-w-xl mx-auto mb-12">
         <h3 className="text-3xl font-extrabold mb-4">Advanced Statistics</h3>
         <p className="text-gray-500 text-base font-semibold">
@@ -16,7 +16,7 @@ const Advance = () => {
 
       <div className="flex flex-col lg:flex-row justify-center items-start lg:space-x-8 relative">
         {/* Connector line */}
-        <div className="absolute lg:top-[50%] top-[180px] left-[50%] transform lg:translate-x-0 translate-x-[-50%] lg:w-full w-1 h-1 lg:h-1 lg:bg-blue-400 z-0"></div>
+        <div className="absolute lg:top-[50%] overflow-hidden top-[180px] left-[50%] transform lg:translate-x-0 translate-x-[-50%] lg:w-full w-1 h-1 lg:h-1 lg:bg-blue-400 z-0"></div>
 
         {/* Card 1 */}
         <div className="relative z-10 bg-white shadow-lg rounded-lg px-6 pb-10 pt-12 w-full lg:w-1/3 mb-8 lg:mb-0 lg:mt-0">

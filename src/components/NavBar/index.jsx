@@ -27,11 +27,13 @@ const NavBar = () => {
             <Button
               color="bg-white"
               hoverColor="hover:bg-white"
-              textColor="text-[#9ae4e5]"
+              textColor="text-black"
             >
               Login
             </Button>
-            <Button className="">Sign Up</Button>
+            <Button color="bg-[#9ae4e5]" className="">
+              Sign Up
+            </Button>
           </div>
         </div>
         <div
