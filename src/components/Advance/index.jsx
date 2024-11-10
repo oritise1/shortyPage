@@ -1,46 +1,67 @@
-import React from 'react';
-import Brand from '../../assets/icon-brand.svg'
-import Detailed from '../../assets/icon-detailed.svg'
-import Fully from '../../assets/icon-fully.svg'
+import React from "react";
+import Brand from "../../assets/icon-brand.svg";
+import Detailed from "../../assets/icon-detailed.svg";
+import Fully from "../../assets/icon-fully.svg";
 
 const Advance = () => {
-    return (
-        <div className='w-full bg-gray-200 px-20'>
-            <span className='text-center w-[100px]'>
-                <h3 className="text-3xl font-extrabold mb-2">Advanced Statistics</h3>
-                <p className='text-gray-500 text-base font-semibold px-[380px]'>Track how your links are performing across the web with our advanced statistics dashboard.</p>
-            </span>
-            <div className="flex justify-center  items-start space-x-8 py-20 relative">
-                {/* Connector line */}
-                <div className="absolute top-[220px] left-28 right-20 h-1 bg-blue-400 z-0"></div>
+  return (
+    <div className="w-full bg-gray-200 px-6 lg:px-20 py-12">
+      <div className="text-center max-w-xl mx-auto mb-12">
+        <h3 className="text-3xl font-extrabold mb-4">Advanced Statistics</h3>
+        <p className="text-gray-500 text-base font-semibold">
+          Track how your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
+      </div>
 
-                <div className="relative z-10 bg-white shadow-lg rounded-lg px-10 pb-10 pt-20 w-1/3 mt-0">
-                    <span className='p-6 rounded-full bg-purple-900 absolute top-[-40px]'>
-                        <img src={Brand} alt='Icon Brand' />
-                    </span>
-                    <h3 className="text-lg font-extrabold mb-2">Brand Recognition</h3>
-                    <p className='text-gray-500 text-base font-semibold'>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help install confidence in your content </p>
-                </div>
+      <div className="flex flex-col lg:flex-row justify-center items-start lg:space-x-8 relative">
+        {/* Connector line */}
+        <div className="absolute lg:top-[50%] top-[180px] left-[50%] transform lg:translate-x-0 translate-x-[-50%] lg:w-full w-1 h-1 lg:h-1 lg:bg-blue-400 z-0"></div>
 
-                <div className="relative z-10 bg-white shadow-lg rounded-lg px-10 pb-10 pt-20 w-1/3 mt-8">
-                    <span className='p-6 rounded-full bg-purple-900 absolute top-[-40px]'>
-                        <img src={Detailed} alt='Icon Brand' />
-                    </span>
-                    <h3 className="text-lg font-extrabold mb-2">Detailed Records</h3>
-                    <p className='text-gray-500 text-base font-semibold'>Gain insights into who is clicking your links. Knowing when and where people engage withyour content helps inform better decisions. </p>
-                </div>
-
-                <div className="relative z-10 bg-white shadow-lg rounded-lg px-10 pb-10 pt-20 w-1/3 mt-16">
-                    <span className='p-6 rounded-full bg-purple-900 absolute top-[-40px]'>
-                        <img src={Fully} alt='Icon Brand' />
-                    </span>
-                    <h3 className="text-lg font-extrabold mb-2">Fully Customizable</h3>
-                    <p className='text-gray-500 text-base font-semibold'>Improve brand awareness and content discoverabilty through customizable links, supercharging audience engagement.</p>
-                </div>
-            </div>
+        {/* Card 1 */}
+        <div className="relative z-10 bg-white shadow-lg rounded-lg px-6 pb-10 pt-12 w-full lg:w-1/3 mb-8 lg:mb-0 lg:mt-0">
+          <div className="p-4 rounded-full bg-purple-900 absolute top-[-30px] left-1/2 transform -translate-x-1/2 lg:left-10">
+            <img src={Brand} alt="Icon Brand" />
+          </div>
+          <h3 className="text-lg font-extrabold mb-2 text-center lg:text-left">
+            Brand Recognition
+          </h3>
+          <p className="text-gray-500 text-base font-semibold text-center lg:text-left">
+            Boost your brand recognition with each click. Generic links don't
+            mean a thing. Branded links help install confidence in your content.
+          </p>
         </div>
-    );
-};
 
+        {/* Card 2 */}
+        <div className="relative z-10 bg-white shadow-lg rounded-lg px-6 pb-10 pt-12 w-full lg:w-1/3 mb-8 lg:mb-0 lg:mt-8">
+          <div className="p-4 rounded-full bg-purple-900 absolute top-[-30px] left-1/2 transform -translate-x-1/2 lg:left-10">
+            <img src={Detailed} alt="Icon Detailed" />
+          </div>
+          <h3 className="text-lg font-extrabold mb-2 text-center lg:text-left">
+            Detailed Records
+          </h3>
+          <p className="text-gray-500 text-base font-semibold text-center lg:text-left">
+            Gain insights into who is clicking your links. Knowing when and
+            where people engage with your content helps inform better decisions.
+          </p>
+        </div>
+
+        {/* Card 3 */}
+        <div className="relative z-10 bg-white shadow-lg rounded-lg px-6 pb-10 pt-12 w-full lg:w-1/3 lg:mt-16">
+          <div className="p-4 rounded-full bg-purple-900 absolute top-[-30px] left-1/2 transform -translate-x-1/2 lg:left-10">
+            <img src={Fully} alt="Icon Fully Customizable" />
+          </div>
+          <h3 className="text-lg font-extrabold mb-2 text-center lg:text-left">
+            Fully Customizable
+          </h3>
+          <p className="text-gray-500 text-base font-semibold text-center lg:text-left">
+            Improve brand awareness and content discoverability through
+            customizable links, supercharging audience engagement.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Advance;
